@@ -45,7 +45,7 @@ if menu == 'Inicio':
     """
     st.markdown(html_temp,unsafe_allow_html=True)
 
-    st.subheader("El dataset en el cual estamos trabajando es *Icfes Colombia 2018-2021* en este encontramos datos relacionados con las características de estudiantes que realizaron las  pruebas icfes en unos periodos determinados por año. En el dataset original se describe información   general, académica, familiar, socioeconómica y laboral de los estudiantes.")
+    st.subheader("El dataset en el cual estamos trabajando es *Icfes Colombia 2018-2021* en este encontramos datos relacionados con las características de estudiantes que realizaron las  pruebas icfes en unos periodos determinados por año. En el dataset original se describe información   general, académica, familiar, socioeconómica del los estudiantes.")
     ver = st.button('Mostrar datos')
     if ver:
         st.dataframe(df)
