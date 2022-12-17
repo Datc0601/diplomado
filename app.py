@@ -130,7 +130,7 @@ elif menu == 'Exploración':
     fig3
 
     def genero_est():
-            genero= df['ESTU_GENERO'].value_counts()
+            genero= df['FAMI_TIENEINTERNET'].value_counts()
 
             datos = ['Si', 'No']
             colores = ["#618AE8","#5c60e6"]
@@ -144,39 +144,6 @@ elif menu == 'Exploración':
     
     genero_est()
     
-    
-    def fami_internet():
-            internet = df['FAMI_TIENEINTERNET'].value_counts()
-
-            datos2 = ['Si', 'No']
-            colores2 = ["#618AE8","#5c60e6"]
-
-            plt.pie(internet, labels=datos2,autopct='%.2f', colors= colores2,radius=0.5)
-
-            plt.title('Estudiantes Internet')
-            plt.show()
-
-            st.pyplot(plt)
-    
-    fami_internet()
-    
-    def fami_computador():
-            computador = df['FAMI_TIENECOMPUTADOR'].value_counts()
-
-            datos3 = ['Si', 'No']
-            colores = ["#618AE8","#5c60e6"]
-
-            plt.pie(computador, labels=datos3,autopct="%0.lf %%", colors= colores,radius=0.5)
-
-            plt.title('Estudiantes Computador')
-            plt.show()
-
-            st.pyplot(plt)
-    
-    fami_computador()
-   
-
-
     
 
 #PREDICCION
