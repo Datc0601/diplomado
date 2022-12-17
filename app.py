@@ -17,7 +17,7 @@ from sklearn import svm
 @st.cache(allow_output_mutation=True)
 def cargar_de_datos():
     leer_columnas = ['ESTU_DEPTO_RESIDE','ESTU_GENERO','FAMI_TIENECOMPUTADOR','FAMI_TIENEINTERNET','FAMI_ESTRATOVIVIENDA','FAMI_COMECARNEPESCADOHUEVO','PUNT_GLOBAL']
-    df = pd.read_csv("icfes_data.csv", sep= "\t",low_memory=False, usecols=leer_columnas)
+    df = pd.read_csv("icfes_data.csv",low_memory=False, usecols=leer_columnas)
     return df
 
 
