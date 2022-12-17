@@ -137,7 +137,7 @@ elif menu == 'Exploración':
 
             plt.pie(genero, labels=datos,autopct="%0.lf %%", colors= colores,radius=0.5)
 
-            plt.title('Estudiantes Internet')
+            plt.title('GENERO')
             plt.show()
 
             st.pyplot(plt)
@@ -148,10 +148,10 @@ elif menu == 'Exploración':
     def fami_internet():
             internet = df['FAMI_TIENEINTERNET'].value_counts()
 
-            datos = ['Si', 'No']
+            datos2 = ['Si', 'No']
             colores = ["#618AE8","#5c60e6"]
 
-            plt.pie(internet, labels=datos,autopct="%0.lf %%", colors= colores,radius=0.5)
+            plt.pie(internet, labels=datos2,autopct="%0.lf %%", colors= colores,radius=0.5)
 
             plt.title('Estudiantes Internet')
             plt.show()
@@ -163,12 +163,12 @@ elif menu == 'Exploración':
     def fami_computador():
             computador = df['FAMI_TIENECOMPUTADOR'].value_counts()
 
-            datos = ['Si', 'No']
+            datos3 = ['Si', 'No']
             colores = ["#618AE8","#5c60e6"]
 
-            plt.pie(computador, labels=datos,autopct="%0.lf %%", colors= colores,radius=0.5)
+            plt.pie(computador, labels=datos3,autopct="%0.lf %%", colors= colores,radius=0.5)
 
-            plt.title('Estudiantes Internet')
+            plt.title('Estudiantes Computador')
             plt.show()
 
             st.pyplot(plt)
