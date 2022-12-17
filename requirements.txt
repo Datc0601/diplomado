@@ -7,3 +7,4 @@ streamlit==1.15.0
 protobuf==3.20.*
 plotly==5.9.0
 matplotlib
+streamlit_option_menu
