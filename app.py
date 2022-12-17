@@ -129,34 +129,55 @@ elif menu == 'Exploración':
     
     fig3
 
+    def genero_est():
+            genero= df['ESTU_GENERO'].value_counts()
+
+            datos = ['Si', 'No']
+            colores = ["#618AE8","#5c60e6"]
+
+            plt.pie(genero, labels=datos,autopct="%0.lf %%", colors= colores,radius=0.5)
+
+            plt.title('Estudiantes Internet')
+            plt.show()
+
+            st.pyplot(plt)
     
-
-
-    df = cargar_de_datos()
-    m_flia = df['FAMI_TIENEINTERNET'].value_counts()
-
-    datos = ['Si', 'No']
-    colores = ["#618AE8","#5c60e6"]
-
-    plt.pie(m_flia, labels=datos,autopct="%0.lf %%", colors= colores,radius=0.7)
-
-    plt.title('Estudiantes Internet')
-    plt.show()
-
-    st.pyplot(plt)
+    genero_est()
     
+    
+    def fami_internet():
+            internet = df['FAMI_TIENEINTERNET'].value_counts()
+
+            datos = ['Si', 'No']
+            colores = ["#618AE8","#5c60e6"]
+
+            plt.pie(internet, labels=datos,autopct="%0.lf %%", colors= colores,radius=0.5)
+
+            plt.title('Estudiantes Internet')
+            plt.show()
+
+            st.pyplot(plt)
+    
+    fami_internet()
+    
+    def fami_computador():
+            computador = df['FAMI_TIENECOMPUTADOR'].value_counts()
+
+            datos = ['Si', 'No']
+            colores = ["#618AE8","#5c60e6"]
+
+            plt.pie(computador, labels=datos,autopct="%0.lf %%", colors= colores,radius=0.5)
+
+            plt.title('Estudiantes Internet')
+            plt.show()
+
+            st.pyplot(plt)
+    
+   fami_computador()
    
 
 
-    #a4 = df.groupby(by=['FAMI_TIENEINTERNET']).mean()[['PUNT_GLOBAL']]
-
-
-    #a5 = df.groupby(by=['FAMI_TIENECOMPUTADOR']).mean()[['PUNT_GLOBAL']]
-
-
-   
-
-    #a7 = df.groupby(by=['ESTU_DEDICACIONLECTURADIARIA']).mean()[['PUNT_GLOBAL']]
+    
 
 #PREDICCION
 
