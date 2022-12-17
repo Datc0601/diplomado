@@ -187,7 +187,7 @@ elif menu == 'Predicción':
 
     st.subheader("Se pretende predecir si el estudiante gana o pierde las pruebas icfes teniendo en cuenta las variables socioeconomicas ")
 
-    st.subheader(" Nota: Gana las pruebas icfes apartir de un puntacion mayor a 250 menor a esto se consideraria perdido")
+    st.subheader(" Nota: Gana las pruebas icfes apartir de un puntacion mayor o igual a 250, de lo contrario pierde la prueba")
 
     estratos = {'Sin Estrato':0,'Estrato 1':1 , 'Estrato 2':2 ,'Estrato 3':3 , 'Estrato 4':4 ,'Estrato 5':5,'Estrato 6':6}
 
