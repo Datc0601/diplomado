@@ -11,7 +11,9 @@ from flask import Flask, request, jsonify, render_template, url_for
 import joblib
 from sklearn import svm
 
-
+CURRENT_THEME = "blue"
+IS_DARK_THEME = True
+EXPANDER_TEXT = """
 
 @st.cache(allow_output_mutation=True)
 def cargar_de_datos():
