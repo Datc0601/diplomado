@@ -75,7 +75,7 @@ elif menu == 'Exploración':
 
     # Título
     html_temp = """
-    <h1 style="color:#618AE8;text-align:center;">Exploración</h1>
+    <h1 style="color:#618AE8;text-align:center;">EXPLORACIÓN</h1>
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
