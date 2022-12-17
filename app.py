@@ -135,7 +135,7 @@ elif menu == 'Exploración':
             datos = ['Si', 'No']
             colores = ["#618AE8","#5c60e6"]
 
-            plt.pie(genero, labels=datos,autopct="%0.lf %%", colors= colores,radius=0.5)
+            plt.pie(genero, labels=datos, colors= colores,radius=0.5)
 
             plt.title('GENERO')
             plt.show()
