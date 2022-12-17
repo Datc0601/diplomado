@@ -173,7 +173,7 @@ elif menu == 'Exploración':
 
             st.pyplot(plt)
     
-   fami_computador()
+    fami_computador()
    
 
 
