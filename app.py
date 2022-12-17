@@ -11,9 +11,7 @@ from flask import Flask, request, jsonify, render_template, url_for
 import joblib
 from sklearn import svm
 
-base="light"
-primaryColor="#0041d3"
-textColor="#e5eaea"
+
 
 @st.cache(allow_output_mutation=True)
 def cargar_de_datos():
@@ -28,7 +26,7 @@ st.set_page_config(
      initial_sidebar_state="expanded"
  )
 
-
+@st.cache(allow_output_mutation=True)
 df = cargar_de_datos().copy()
 with st.sidebar: 
     st.image('logo.png')
