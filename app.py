@@ -151,7 +151,7 @@ elif menu == 'Exploración':
             datos2 = ['Si', 'No']
             colores2 = ["#618AE8","#5c60e6"]
 
-            plt.pie(internet, labels=datos2,autopct= make_autopct(datos2)), colors= colores2,radius=0.5)
+            plt.pie(internet, labels=datos2,autopct='%.2f', colors= colores2,radius=0.5)
 
             plt.title('Estudiantes Internet')
             plt.show()
