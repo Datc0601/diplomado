@@ -26,7 +26,7 @@ st.set_page_config(
      initial_sidebar_state="expanded"
  )
 
-@st.cache(allow_output_mutation=True)
+
 df = cargar_de_datos().copy()
 with st.sidebar: 
     st.image('logo.png')
