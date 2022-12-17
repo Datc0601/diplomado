@@ -155,7 +155,7 @@ elif menu == 'Exploración':
 
             plt.pie(genero, labels=datos,autopct="%0.lf %%", colors= colores,radius=0.5)
 
-            plt.title('ESTUDIANTES CON INTERNET/NO INTERNET')
+            plt.title(' PORCENTAJE CON INTERNET/NO INTERNET')
             plt.show()
 
             st.pyplot(plt)
