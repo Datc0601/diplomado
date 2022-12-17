@@ -137,7 +137,7 @@ elif menu == 'Exploración':
 
             plt.pie(genero, labels=datos,autopct="%0.lf %%", colors= colores,radius=0.5)
 
-            plt.title('GENERO')
+            plt.title('INTERNET')
             plt.show()
 
             st.pyplot(plt)
