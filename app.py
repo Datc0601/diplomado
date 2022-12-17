@@ -144,6 +144,24 @@ elif menu == 'Exploración':
     
     genero_est()
     
+    a3 = df.groupby(by=['ESTU_GENERO']).mean()[['PUNT_GLOBAL']]
+    
+    
+    fig1 = px.bar(
+       
+        a3,
+        x = "PUNT_GLOBAL",
+        y = a3.index,
+        orientation = "h",
+        height=700, width = 1200,
+        title= "<b> PUNTAJE GLOBAL POR DEPARTAMENTOS </b>",
+        color_discrete_sequence = ['#618AE8'] * len(a3),
+        template = "plotly_white"
+        ).update_layout(xaxis_title="PRORMEDIO DE PUNTAJE GLOBAL", yaxis_title="GENERO",yaxis={'categoryorder':'total ascending'})
+    
+    
+    fig1
+    
     
 
 #PREDICCION
