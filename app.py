@@ -135,7 +135,7 @@ elif menu == 'Exploración':
             datos = ['Si', 'No']
             colores = ["#618AE8","#5c60e6"]
 
-            plt.pie(genero, labels=datos,autopct="%0.lf %", colors= colores,radius=0.5)
+            plt.pie(genero, labels=datos,autopct="%0.lf %%", colors= colores,radius=0.5)
 
             plt.title('GENERO')
             plt.show()
@@ -149,9 +149,9 @@ elif menu == 'Exploración':
             internet = df['FAMI_TIENEINTERNET'].value_counts()
 
             datos2 = ['Si', 'No']
-            colores = ["#618AE8","#5c60e6"]
+            colores2 = ["#618AE8","#5c60e6"]
 
-            plt.pie(internet, labels=datos2,autopct="%0.lf %%", colors= colores,radius=0.5)
+            plt.pie(internet, labels=datos2,autopct2="%0.lf %%", colors= colores2,radius=0.5)
 
             plt.title('Estudiantes Internet')
             plt.show()
