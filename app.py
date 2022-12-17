@@ -26,7 +26,7 @@ st.set_page_config(
      initial_sidebar_state="expanded"
  )
 
-
+cargar_de_datos().copy()
 with st.sidebar: 
     st.image('logo.png')
     menu = option_menu(
@@ -35,7 +35,7 @@ with st.sidebar:
         default_index =0
     )
 
-cargar_de_datos().copy()
+
 if menu == 'Inicio':
 
     # Título
